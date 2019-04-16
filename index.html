@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
+    <title>Tip Calculator</title>
+</head>
+<body>
+    <section id="calc">
+            <h1>Tip Calculator</h1>
+        <div class="container">
+            <div class="calc-body">
+                <form>
+                    <p>How much is your bill?</p>
+                    <input type="text" class="form-control" id="billAm" aria-describedby="emailHelp" placeholder="Bill Amount">
+                    <i class="fas fa-dollar-sign"></i>     
+
+                    <p class="rate-text">How was the service</p>
+                    <div class="form-group">
+                        <label for="rate"></label>
+                        <select class="form-control" id="rate">
+                            <option>Choose an Option</option>
+                            <option value="0.02">Bad 2%</option>
+                            <option value="0.05">Not Bad 5%</option>
+                            <option value="0.1">Okay 10%</option>
+                            <option value="0.2">Good 20%</option>
+                            <option value="0.3">Awesome 30%</option>
+                        </select>
+                    </div>
+
+                    <p>How many people are sharing the bill?</p>
+                    <input type="text" class="form-control" id="peopleSh" aria-describedby="emailHelp" placeholder="Number of People">
+                    <i class="fas fa-users"></i>
+
+                    <div class="btn">
+                        <a href="#" id="calcBtn">Calculate</a>
+                    </div>
+                </form>
+            </div>
+            
+            <div id="totalTip">
+                    <i class="fas fa-times"></i>
+                    <div class="result">
+                        <h2>Your Tip:</h2>
+                        <span>$</span><p id="tip">0.00</p>
+                    </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <script
+        src="https://code.jquery.com/jquery-3.4.0.min.js"
+        integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
+        crossorigin="anonymous"></script>
+        <script src="main.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </footer>
+</body>
+</html>
